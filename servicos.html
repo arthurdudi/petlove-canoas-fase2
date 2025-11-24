@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>PetLove Canoas • Serviços e agendamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agende banho e tosa com tele-busca ou entrega local na PetLove Canoas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-servicos">Ir para o agendamento</a>
+
+  <header class="shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg container py-3" aria-label="Menu principal">
+      <a class="navbar-brand fw-bold" href="index.html">
+        PetLove <span>Canoas</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarServicos" aria-controls="navbarServicos" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarServicos">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-semibold" href="servicos.html" aria-current="page">Serviços & Agendamento</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-servicos" class="pb-5">
+    <section class="container py-5" id="banho-tosa">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="card service-card h-100 border-0 shadow-sm">
+            <img src="tele-busca.jpg" class="card-img-top service-photo" alt="Dois cães em compartimento seguro sendo transportados por carro">
+            <div class="card-body">
+              <h2 class="card-title h4">Banho e Tosa com tele-busca</h2>
+              <p>Coletamos o seu pet no endereço informado, realizamos banho e tosa completos com hidratação e devolvemos com segurança.</p>
+              <ul>
+                <li>Tempo médio: 2h</li>
+                <li>Transporte climatizado</li>
+                <li>Envio de fotos por WhatsApp</li>
+              </ul>
+              <p class="fw-bold mb-0">R$ 89,90</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="card service-card h-100 border-0 shadow-sm">
+            <img src="pexels-nishizuka-25426-485294.jpg" class="card-img-top service-photo" alt="Profissional secando cachorro pequeno em mesa de banho e tosa">
+            <div class="card-body">
+              <h2 class="card-title h4">Banho e Tosa no local</h2>
+              <p>Você traz o pet até nosso estúdio em Canoas. Possuímos sala climatizada, música ambiente e monitoramento por câmera.</p>
+              <ul>
+                <li>Agendamento em horários estendidos</li>
+                <li>Opção de hidratação premium</li>
+                <li>Pagamento no balcão ou on-line</li>
+              </ul>
+              <p class="fw-bold mb-0">R$ 69,90</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <form class="card border-0 shadow-sm" id="agendamentoForm" novalidate>
+            <div class="card-body">
+              <h2 class="h4 mb-4">Formulário de cadastro e agendamento</h2>
+
+              <div class="mb-4 form-section">
+                <h3 class="h5">Dados do cliente</h3>
+                <div class="row g-3 mt-2">
+                  <div class="col-md-6">
+                    <label class="form-label required" for="nome">Nome completo</label>
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Ex.: Ana Souza" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label required" for="cpf">CPF</label>
+                    <input class="form-control" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label required" for="email">E-mail</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label required" for="telefone">Telefone</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone" placeholder="(51) 99999-9999" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label required" for="enderecoCliente">Endereço</label>
+                    <input class="form-control" type="text" id="enderecoCliente" name="enderecoCliente" placeholder="Rua, número e bairro" required>
+                  </div>
+                  <div class="col-md-12">
+                    <span class="form-label d-block required">Sexo</span>
+                    <div class="d-flex gap-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino" required>
+                        <label class="form-check-label" for="sexoF">Feminino</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino" required>
+                        <label class="form-check-label" for="sexoM">Masculino</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoOutro" value="Prefiro não informar" required>
+                        <label class="form-check-label" for="sexoOutro">Prefiro não informar</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4 form-section">
+                <h3 class="h5">Dados do pet</h3>
+                <div class="row g-3 mt-2">
+                  <div class="col-md-4">
+                    <label class="form-label required" for="petNome">Nome</label>
+                    <input class="form-control" type="text" id="petNome" name="petNome" placeholder="Ex.: Thor" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label required" for="petRaca">Raça</label>
+                    <input class="form-control" type="text" id="petRaca" name="petRaca" placeholder="Ex.: Shih-tzu" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label required" for="petIdade">Idade (anos)</label>
+                    <input class="form-control" type="number" id="petIdade" name="petIdade" min="0" max="25" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label" for="observacoesPet">Observações (alergias, preferências...)</label>
+                    <textarea class="form-control" id="observacoesPet" name="observacoesPet" rows="2" placeholder="Conte-nos algo importante sobre o pet"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <h3 class="h5">Serviço e agendamento</h3>
+                <div class="row g-3 mt-2">
+                  <div class="col-md-6">
+                    <label class="form-label required" for="servico">Serviço</label>
+                    <select class="form-select" id="servico" name="servico" required>
+                      <option value="">Escolha...</option>
+                      <option value="Banho completo">Banho completo</option>
+                      <option value="Tosa higiênica">Tosa higiênica</option>
+                      <option value="Banho + tosa completa">Banho + tosa completa</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="extras">Serviços adicionais</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="hidrata" name="extras" value="Hidratação">
+                      <label class="form-check-label" for="hidrata">Hidratação nutritiva</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="corteUnhas" name="extras" value="Corte de unhas">
+                      <label class="form-check-label" for="corteUnhas">Corte de unhas</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label required" for="data">Data</label>
+                    <input class="form-control" type="date" id="data" name="data" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label required" for="hora">Horário</label>
+                    <input class="form-control" type="time" id="hora" name="hora" min="08:00" max="20:00" required>
+                  </div>
+                  <div class="col-md-12">
+                    <span class="form-label d-block required">Método de agendamento</span>
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="metodoTele" name="metodo" value="tele-busca" required>
+                        <label class="form-check-label" for="metodoTele">Tele-busca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="metodoLocal" name="metodo" value="local" required>
+                        <label class="form-check-label" for="metodoLocal">Entrega no local</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 d-none" id="enderecoGroup">
+                    <label class="form-label required" for="endereco">Endereço para tele-busca</label>
+                    <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento">
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+                <button class="btn btn-primary btn-lg flex-fill" type="submit">Confirmar agendamento</button>
+                <button class="btn btn-outline-secondary flex-fill" type="reset">Limpar formulário</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card cta-card border-0 shadow-sm">
+            <div class="card-body">
+              <h2 class="h5">Resumo instantâneo</h2>
+              <p class="text-muted">Assim que você confirmar, mostramos abaixo os principais dados para conferência. Não é preciso recarregar a página.</p>
+              <div class="alert alert-info" role="status" aria-live="polite" id="agendamentoResumo">
+                Nenhum agendamento enviado ainda.
+              </div>
+              <hr>
+              <h3 class="h6 text-uppercase text-muted mb-3">Horários disponíveis</h3>
+              <ul class="list-unstyled">
+                <li>• Segunda a sexta: 8h às 20h</li>
+                <li>• Sábado: 8h às 18h</li>
+                <li>• Tele-busca: janelas de 30 min</li>
+              </ul>
+              <p class="small mb-0">Para reagendar, basta enviar nova solicitação ou falar conosco via WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-auto py-4">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+      <div>
+        <strong>PetLove Canoas</strong> — © <span id="current-year">2025</span>
+        <p class="mb-0">Banho e tosa com foco no conforto do seu pet.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <a class="me-3" href="index.html">Início</a>
+        <a class="me-3" href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
